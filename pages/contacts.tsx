@@ -11,6 +11,12 @@ const Contact = () => {
     <div className= "min-h-screen flex flex-col place-content-evenly" id="contacts">
       <Head>
       <title>{router.asPath == "/contacts" ? "Contact Us":"Gigatorb" }</title>
+      <meta name="description" content="Gigatorb Contact Information " />
+        <meta
+          name="keywords"
+          content="Gigatorb, Curam, Merative, Cúram, Social Program
+            Management, SPM ,Implementation Services ,Cúram SPM Implementation Services , Cúram SPM Implementation, Merative Cúram , merative cúram spm ,merative spm, merative cúram spm implementation services, Merative Cúram SPM platform"
+        />
     </Head>
       <div >
         <h2 className=" text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold" >
@@ -38,7 +44,7 @@ const Contact = () => {
           <div className="font-bold uppercase ...">email</div>
           <p>
           <a className="underline" href="mailto:info@gigatorb.com">info@gigatorb.com</a></p>
-          <pre>     </pre>
+          
         </div>
       </div>
     </div>

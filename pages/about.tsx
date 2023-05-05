@@ -7,6 +7,9 @@ const About = () => {
     <>
     <Head>
       <title>{router.asPath == "/about" ? "About" : "Gigatorb" }</title>
+        <meta name="description" content="Information About Gigatorb" />
+        <meta name="keywords" content="Gigatorb, Curam, Merative, Cúram, Social Program
+            Management, SPM ,Implementation Services"/>
     </Head>
     <div id="about" className="min-h-screen flex flex-col place-content-evenly">
       <h2 className="mt-5 text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">

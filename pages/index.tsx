@@ -18,6 +18,9 @@ export default function Home({ children }: { children: React.ReactNode }) {
     <main className="centre_wr">
       <Head>
         <title>Gigatorb</title>
+        <meta name="description" content="Gigatorb" />
+        <meta name="keywords" content="Gigatorb Curam Merative Cúram Social Program
+            Management SPM Implementation Services"/>
       </Head>
       <div className="flex flex-row">
        
