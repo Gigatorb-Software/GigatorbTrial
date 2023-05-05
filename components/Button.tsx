@@ -2,6 +2,7 @@ import React from "react";
 type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   type?: "submit";
   processing?: false;
+ 
 };
 
 export default function Button({
@@ -9,6 +10,7 @@ export default function Button({
   className = "",
   processing,
   children = "",
+ 
 }: Props) {
   return (
     <button

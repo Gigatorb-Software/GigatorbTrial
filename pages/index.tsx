@@ -8,6 +8,7 @@ import About from "./about";
 import React, { useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import 'animate.css';
 
 export default function Home({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Home({ children }: { children: React.ReactNode }) {
           </h6>
           <div className="flex flex-row justify-center mt-4 ">
             <a href="services">
-              <Button className="animated bounceInLeft mt-2">
+              <Button className="animate__animated animate__bounceInLeft">
                 Get Started
               </Button>
             </a>
