@@ -1,21 +1,26 @@
-import '@/styles/globals.css'
+import '../styles/tailwind.css';
+import type { AppProps } from 'next/app';
+import { Suspense } from 'react';
+import DefaultLayout from '../components/Layouts/DefaultLayout';
 
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import type { AppProps } from 'next/app'
-import React, { useEffect} from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Provider } from 'react-redux';
+import store from '../store/index';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-    }, []);
-  return(  
- <>
-  <Header/>
-  <Component {...pageProps}/>
-  <Footer/>
-  </> 
-  )
+    return (
+        <Provider store={store}>
+            <Suspense>
+                <Head>
+                    <title>GigaTorb – Industrial It Solutions </title>
+                    <meta charSet="UTF-8" />
+                    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                </Head>
+                <DefaultLayout>
+                    <Component {...pageProps} />
+                </DefaultLayout>
+            </Suspense>
+        </Provider>
+    );
 }
